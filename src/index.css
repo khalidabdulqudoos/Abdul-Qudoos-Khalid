@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1a1a1a;
+    background-color: #FBF9F5;
+  }
+
+  h1, h2, h3, .heading-academic {
+    font-family: 'EB Garamond', Georgia, serif;
+  }
+}
+
+.font-serif-academic {
+  font-family: 'EB Garamond', Georgia, serif;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', Georgia, serif;
+}
+
+.font-sans-clean {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Custom Crimson and Academic Gold styling helpers */
+.bg-crimson-primary {
+  background-color: #A51C30;
+}
+.bg-crimson-dark {
+  background-color: #701121;
+}
+.bg-crimson-subtle {
+  background-color: #FAF0F2;
+}
+.text-crimson-primary {
+  color: #A51C30;
+}
+.text-crimson-dark {
+  color: #701121;
+}
+.border-crimson-primary {
+  border-color: #A51C30;
+}
+.border-crimson-subtle {
+  border-color: rgba(165, 28, 48, 0.18);
+}
+
+.bg-academic-gold {
+  background-color: #C5A059;
+}
+.text-academic-gold {
+  color: #B88E3E;
+}
+.border-academic-gold {
+  border-color: #C5A059;
+}
+
+/* Academic subtle watermark pattern */
+.academic-ruled {
+  background-image: radial-gradient(rgba(165, 28, 48, 0.05) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Print styling for CV view */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+}
